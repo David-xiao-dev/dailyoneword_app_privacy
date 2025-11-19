@@ -2,106 +2,82 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>每日一句 - 隐私政策 / Privacy Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日一句应用隐私政策 / Daily Quote App Privacy Policy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
-
-        .container {
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+        main {
             max-width: 800px;
-            margin: 40px auto;
+            margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-
         h1 {
-            text-align: center;
-            color: #1976D2;
+            font-size: 24px;
+            margin-bottom: 16px;
         }
-
         h2 {
-            color: #1976D2;
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: #4CAF50;
         }
-
-        p {
-            line-height: 1.6;
+        p, li {
+            font-size: 16px;
         }
-
-        .lang-switch {
-            text-align: center;
-            margin-bottom: 20px;
+        ul {
+            margin-left: 20px;
         }
-
-        .lang-switch button {
-            margin: 0 5px;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 6px;
-            background-color: #1976D2;
-            color: #fff;
-            cursor: pointer;
+        .note {
             font-size: 14px;
-        }
-
-        .lang-switch button.active {
-            background-color: #0D47A1;
+            color: #666;
+            margin-top: 16px;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>每日一句 / Daily Quote App</h1>
+<header>
+    <h1>应用隐私政策 / App Privacy Policy</h1>
+</header>
+<main>
+    <h2>中文说明</h2>
+    <p>生效日期：2025 年 11 月 19 日</p>
+    <ul>
+        <li>1. 本应用不收集、存储或分享用户的个人信息，包括位置、联系人、相机、麦克风和设备标识符等。</li>
+        <li>2. 本应用通过公共接口获取每日一句中文和英文内容，仅用于展示，第三方服务不会收集用户信息。</li>
+        <li>3. 本应用不使用广告服务或分析工具，确保用户数据完全保密。</li>
+        <li>4. 若 API 服务提供方发生变化，应用可能会更新获取内容方式，但仍不会收集任何个人信息。</li>
+        <li>5. 本隐私政策适用于所有应用版本和所有平台的用户。</li>
+        <li>6. 若对隐私政策有任何疑问，请通过邮箱 <a href="mailto:fzslcompany@gmail.com">fzslcompany@gmail.com</a> 联系我们。</li>
+    </ul>
+    <p class="note">本隐私政策可能会不定期更新，最新版本会在应用更新说明中提示用户。</p>
 
-    <div class="lang-switch">
-        <button class="active" id="btnZh">中文</button>
-        <button id="btnEn">English</button>
-    </div>
-
-    <div id="content">
-        <h2>隐私政策</h2>
-        <p>1. 本应用不收集、存储或分享用户的个人信息。</p>
-        <p>2. 本应用通过公共接口获取每日一句中文和英文内容，仅用于展示。</p>
-        <p>3. 本应用不会使用任何分析工具或广告 SDK，因此用户数据完全保密。</p>
-        <p>4. 若 API 服务提供方发生变化，应用可能会更新获取内容方式，但仍不会收集个人信息。</p>
-    </div>
-</div>
-
-<script>
-    const btnZh = document.getElementById('btnZh');
-    const btnEn = document.getElementById('btnEn');
-    const content = document.getElementById('content');
-
-    btnZh.addEventListener('click', () => {
-        btnZh.classList.add('active');
-        btnEn.classList.remove('active');
-        content.innerHTML = `
-                <h2>隐私政策</h2>
-                <p>1. 本应用不收集、存储或分享用户的个人信息。</p>
-                <p>2. 本应用通过公共接口获取每日一句中文和英文内容，仅用于展示。</p>
-                <p>3. 本应用不会使用任何分析工具或广告 SDK，因此用户数据完全保密。</p>
-                <p>4. 若 API 服务提供方发生变化，应用可能会更新获取内容方式，但仍不会收集个人信息。</p>
-            `;
-    });
-
-    btnEn.addEventListener('click', () => {
-        btnEn.classList.add('active');
-        btnZh.classList.remove('active');
-        content.innerHTML = `
-                <h2>Privacy Policy</h2>
-                <p>1. This app does not collect, store, or share any personal information from users.</p>
-                <p>2. This app retrieves daily quotes in Chinese and English via public APIs solely for display purposes.</p>
-                <p>3. This app does not use any analytics tools or advertising SDKs, ensuring user data remains completely private.</p>
-                <p>4. If the API service provider changes, the app may update the way it fetches content, but no personal information will ever be collected.</p>
-            `;
-    });
-</script>
+    <h2>English Version</h2>
+    <p>Effective Date: November 19, 2025</p>
+    <ul>
+        <li>1. This app does not collect, store, or share any personal information from users, including location, contacts, camera, microphone, and device identifiers.</li>
+        <li>2. This app retrieves daily quotes in Chinese and English via public APIs solely for display purposes; third-party services do not collect user information.</li>
+        <li>3. This app does not use advertising or analytics tools, ensuring user data remains completely private.</li>
+        <li>4. If the API service provider changes, the app may update the way it fetches content, but no personal information will ever be collected.</li>
+        <li>5. This privacy policy applies to all versions of the app and all user platforms.</li>
+        <li>6. If you have any questions regarding this privacy policy, please contact us at <a href="mailto:contact@example.com">contact@example.com</a>.</li>
+    </ul>
+    <p class="note">This privacy policy may be updated from time to time; the latest version will be indicated in the app update notes.</p>
+</main>
 </body>
 </html>
